@@ -11,9 +11,11 @@ function closeSearch() {
 // Open the full screen booking form
 function openBooking() {
   document.getElementById("myOverlay").style.display = "block";
+  document.body.classList.add("overlay-open");
 }
 
 // Close the full screen booking form
 function closeBooking() {
   document.getElementById("myOverlay").style.display = "none";
+  document.body.classList.add("overlay-open");
 } 

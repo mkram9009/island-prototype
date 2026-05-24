@@ -197,11 +197,15 @@
   </button>
   
   <div id="bookingOverlay" class="bookingOverlay">
-    <span class="closebtn" onclick="closeBooking()" title="Close Overlay">x</span>
+    <!-- <span class="closebtn" onclick="closeBooking()" title="Close Overlay">x</span> -->
       <div class="bookingOverlay-content">
 
   <form id="booking-form">
+  
+  <div class="booking-header">
     <h2>Taniti Lodging Form</h2>
+      <span class="closebtn" onclick="closeBooking()" title="Close Overlay">x</span>
+	</div>
 	
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" minlength="2" maxlength="35" required>
