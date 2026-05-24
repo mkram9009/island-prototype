@@ -1,0 +1,54 @@
+<div class="book-container">
+
+  <button class="bookNowBtn" type="submit" onclick="openBooking()">
+    Book Now
+  </button>
+  
+  <div id="bookingOverlay" class="bookingOverlay">
+    <!-- <span class="closebtn" onclick="closeBooking()" title="Close Overlay">x</span> -->
+      <div class="bookingOverlay-content">
+
+  <form id="booking-form">
+  
+  <div class="booking-header">
+    <h2>Taniti Lodging Form</h2>
+      <span class="closebtn" onclick="closeBooking()" title="Close Overlay">x</span>
+	</div>
+	
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" minlength="2" maxlength="35" required>
+	
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" oninput="confirmEmail()" max="99" required>
+	  <label for="email">Confirm Email:</label>
+      <input type="email" id="email" name="emailConfirm" oninput="confirmEmail()" max="99" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" min="10" required>
+	  <label for="phone">Confirm Phone Number:</label>
+      <input type="tel" id="phone" name="phone" min="10" required>
+	  
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="99" required>
+
+    <label for="room-type">Lodging Type:</label>
+    <select id="room-type" name="lodging-type" required>
+      <option value="" selected>Select Your Lodging</option>
+      <option value="resort">Four-Star Resort</option>
+      <option value="hostel">Hostel</option>
+      <option value="hotel">Hotel</option>
+	  <option value="b-n-b">Bread & Breakfast</option>
+    </select>
+
+	 <label for="arrival-date">Arrival Date:</label>
+    <input type="date" id="arrival-date" name="arrival-date" required>
+
+    <label for="departure-date">Departure Date:</label>
+    <input type="date" id="departure-date" name="departure-date" required>
+
+    <button type="submit" value="Submit">Book Now</button>
+  </form>
+  
+  </div>
+  </div>  
+</div>
